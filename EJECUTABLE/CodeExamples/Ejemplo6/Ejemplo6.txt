@@ -1,0 +1,11 @@
+/*Ejemplo analizador sintactico correcto*/
+let b int = 10;
+let g boolean = false;
+function foo int(int a, string c, boolean d) {
+    if(d && g)
+        return a + b;
+    a /= a*(b + b);
+    if((a > b+a) || a < a*b)
+        return 134;
+}
+foo(23, "hola", true);

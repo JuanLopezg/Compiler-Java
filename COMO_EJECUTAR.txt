@@ -1,0 +1,5 @@
+Para ejecutar el analizador, introducir en línea de comandos dentro de
+esta carpeta:
+     java -jar AnalizadorLenguajeJavaScript.jar
+No mover la carpeta de CodeExamples (produce errores sino al tratar de
+buscar los ejemplos).

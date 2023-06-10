@@ -1,0 +1,13 @@
+let a int;
+let b boolean;
+let c string = "hola";
+function imprimir(int n, string s) {
+    print "Esta funcion imprime una cadena";
+    if(n < 100)
+        print("N menor que 100");
+    print s;
+}
+input a;
+imprimir(a, c);
+a /= 10;
+imprimir(a, "Tal vez se pueda ahora");

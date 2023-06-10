@@ -1,0 +1,25 @@
+TABLA foo #2:
+	* LEXEMA : 'a'
+		+ tipo : 'entero'
+		+ despl : 0
+	* LEXEMA : 'c'
+		+ tipo : 'cadena'
+		+ despl : 1
+	* LEXEMA : 'd'
+		+ tipo : 'bool'
+		+ despl : 65
+TABLA Principal #1:
+	* LEXEMA : 'b'
+		+ tipo : 'entero'
+		+ despl : 0
+	* LEXEMA : 'g'
+		+ tipo : 'bool'
+		+ despl : 1
+	* LEXEMA : 'foo'
+		+ tipo : 'funcion'
+			+ numParam :  3
+			+ TipoParam01 : 'entero'
+			+ TipoParam02 : 'cadena'
+			+ TipoParam03 : 'bool'
+			+ TipoRetorno : 'entero'
+		+ EtiqFuncion : 'Etfoo01'

@@ -1,0 +1,28 @@
+/*Ejemplo mal con errores sintacticos y lexicos*/
+/*error excede max*/
+let const int = 123123412;
+/*error excede 64 car*/
+let pal string = "toooooooolooooonnnngggggggggggggggglsfñalkjdfñalskjdflaksjflksdfñalskdjfñlaskdjfñalkdj";
+
+function fibo int (int n,int num){
+	let a = 23; /*error*/
+	/*error lexico*/
+	let b string = "halksef;
+	let c boolean;
+	input c;
+	if(c | const < 1000) /*error ||*/
+		print const;
+	if(n > m & n < const) /*error &&*/
+		return const*a;
+}
+
+let a int;
+let b int;
+a = fibo(const, 1000);
+
+print a;
+print (a + b*a);
+
+/*error fallo de comentario, solo continua lexico (lanzara tambien un error el sintactico)*/
+ada / 23423;
+

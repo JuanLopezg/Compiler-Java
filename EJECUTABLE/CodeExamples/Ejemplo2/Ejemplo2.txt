@@ -1,0 +1,39 @@
+/*programa de ejemplo con errores 2*/
+/*esta funcion calcula el factorial de n mediante un bucle*/
+function factorial int(int n) {
+	let i int;/*declaracion de variable*/
+	let pn int;
+	if(n == 0) 
+		return 1; 
+	pn = n;
+	
+	return n*factorial(n - 1);
+}
+/*esta funcion le resta a num los n primeros numeros naturales*/
+function sumaNprimeros int(int n,int num){
+	let res;/*declaracion de variable*/
+	
+	res=num;
+	if(n < num)
+		return n + sumaNprimeros(n, num);
+	return res;
+}
+let x int = 32798;
+function main() {
+	let n int = 234;
+	let m int = 432;
+	let num = sumaNprimeros(n, m);
+	input n;
+	input m;
+	let num2 = factorial(sumaNprimeros(n, m));
+	num2 /= x; 
+	if(num < num2 & num2 > 0)
+		print "mayor";
+	let s string = "hola;
+	print(s);
+	return;
+
+}
+print main();
+
+	

@@ -1,0 +1,73 @@
+Terminales = { Cte_int Cte_str Cte_bool + * < > && || = /= ( ) { } : , ; let int string boolean 
+	print input function return if switch case default break Id Lambda $ }
+NoTerminales = { 
+	PE P F SentS SentC SentSw ExpDec Ig Args ArgsE Vargs VargsE BloqF BloqSw Type TypeE
+	Val ValRet ValE And AndE Comp CompE Sum SumE Prod ProdE Unit UnitE 
+}
+Axioma = PE
+Producciones = {
+PE -> P ////1
+P -> SentC P //// 2
+P -> F P
+P -> Lambda
+SentS -> print Val ; //// 5
+SentS -> input Id ;
+SentS -> return ValRet ;
+SentS -> break ;
+SentS -> Id ExpDec ;
+ExpDec -> = Val		//// 10
+ExpDec -> ( Vargs )
+ExpDec -> /= Val
+Vargs -> Val VargsE	//// 13	
+Vargs -> Lambda
+VargsE -> , Val VargsE ////15
+VargsE -> Lambda
+SentC -> let Id Type Ig ; //// 17
+SentC -> if ( Val ) SentS
+SentC -> switch ( Val ) { BloqSw } 
+SentC -> SentS
+Ig -> = Val		//// 21
+Ig -> Lambda
+Type -> int		//// 23
+Type -> string
+Type -> boolean
+BloqSw -> case Val : SentSw BloqSw //// 26
+BloqSw -> default : SentSw
+BloqSw -> Lambda
+SentSw -> SentC SentSw //// 29
+SentSw -> Lambda
+F -> function Id TypeE ( Args ) { BloqF } //// 31
+TypeE -> Type		//// 32
+TypeE -> Lambda
+Args -> Type Id ArgsE //// 34
+Args -> Lambda
+ArgsE -> , Type Id ArgsE //// 36
+ArgsE -> Lambda
+BloqF -> SentC BloqF	//// 38
+BloqF -> Lambda
+ValRet -> Val			//// 40	
+ValRet -> Lambda
+Val -> And ValE			//// 42 a || b
+ValE -> || And ValE		//// 43
+ValE -> Lambda
+And -> Comp AndE 		//// 45 a && b
+AndE -> && Comp AndE	//// 46
+AndE -> Lambda
+Comp -> Sum CompE		//// 48 a < b o a > b
+CompE -> < Sum CompE	//// 49
+CompE -> > Sum CompE
+CompE -> Lambda
+Sum -> Prod SumE		//// 52 a + b
+SumE -> + Prod SumE		//// 53
+SumE -> Lambda			
+Prod -> Unit ProdE		//// 55 a * b
+ProdE -> * Unit ProdE	//// 56
+ProdE -> Lambda
+Unit -> ( Val )			//// 58
+Unit -> Cte_int
+Unit -> Cte_bool
+Unit -> Cte_str
+Unit -> Id UnitE
+UnitE -> ( Vargs ) 		//// 63
+UnitE -> Lambda			//// 64
+}

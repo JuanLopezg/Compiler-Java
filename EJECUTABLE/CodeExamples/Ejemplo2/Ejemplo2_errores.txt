@@ -1,0 +1,51 @@
+Error Sintactico 61: Valor inesperado '=', en la linea 6
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del if, esperando if ( ValorBool ) SentenciaSimple
+	 -> Reiniciando analizador sintactico a partir de la linea 8 con la palabra 'identificador'
+
+Error Lexico 40:
+	Ha llegado el caracter '-' no reconocido por el procesador, en la linea 10
+	-> Manejando el error lexico: Pidiendo otro token al lexico
+
+Error Sintactico 61: Valor inesperado 'constante entera', en la linea 10
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en el return, esperando return [Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 11 con la palabra '}'
+
+Error Sintactico 61: Valor inesperado ';', en la linea 14
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del let, esperando let Identificador Tipo [= Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 16 con la palabra 'identificador'
+
+Error Lexico 47:
+	El valor = 32798 supera el valor maximo de 32767, en la linea 21
+	-> Manejando el error lexico: Continuara el sintactico como si hubiera leido un entero valido
+
+Error Sintactico 61: Valor inesperado '=', en la linea 25
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del let, esperando let Identificador Tipo [= Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 26 con la palabra 'input'
+
+Error Sintactico 61: Valor inesperado '=', en la linea 28
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del let, esperando let Identificador Tipo [= Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 29 con la palabra 'identificador'
+
+Error Lexico 42:
+	Esperando '&', ha recibido ' ', en la linea 30
+	-> Manejando el error lexico: Continuara como si hubiera leido un '&&'
+
+Error Lexico 49:
+	La cadena 'hola;' termina inesperadamente con un salto de linea, en la linea 33
+	-> Manejando el error lexico: Debido a la cadena faltandole las comillas de cierre, devolvemos solo un ';'
+
+Error Sintactico 61: Valor inesperado ';', en la linea 33
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del let, esperando let Identificador Tipo [= Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 33 con la palabra 'print'
+
+Se han detectado errores semanticos en el codigo:
+	+ Error Semantico 92:
+		En la funcion 'factorial' se espera que se devuelva entero, pero esta tratando de devolver vacio, antes de la linea 13
+	+ Error Semantico 100:
+		El identificador 'main' es una funcion que no devuelve ningun valor y se esta tratando de usarla para asignar un valor, antes de la linea 37

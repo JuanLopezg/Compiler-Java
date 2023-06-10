@@ -1,0 +1,74 @@
+Error Lexico 40:
+	Ha llegado el caracter '-' no reconocido por el procesador, en la linea 4
+	-> Manejando el error lexico: Pidiendo otro token al lexico
+
+Error Sintactico 61: Valor inesperado 'constante entera', en la linea 4
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del if, esperando if ( ValorBool ) SentenciaSimple
+	 -> Reiniciando analizador sintactico a partir de la linea 5 con la palabra 'return'
+
+Error Sintactico 60: Error de equiparacion, esperando : ha recibido ;, en la linea 16
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion de los bloques del switch, esperando case Valor : [SentSwitch]
+	 -> Reiniciando analizador sintactico a partir de la linea 20 con la palabra 'return'
+
+Error Sintactico 61: Valor inesperado ';', en la linea 24
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del let, esperando let Identificador Tipo [= Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 25 con la palabra 'input'
+
+Error Sintactico 60: Error de equiparacion, esperando ; ha recibido ), en la linea 27
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del if, esperando if ( ValorBool ) SentenciaSimple
+	 -> Reiniciando analizador sintactico a partir de la linea 28 con la palabra 'if'
+
+Error Sintactico 61: Valor inesperado 'let', en la linea 31
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del let, esperando let Identificador Tipo [= Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 33 con la palabra 'identificador'
+
+Error Sintactico 61: Valor inesperado 'identificador', en la linea 40
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en el print, esperando print [Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 41 con la palabra 'identificador'
+
+Error Sintactico 61: Valor inesperado '+', en la linea 41
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la asignacion de la variable 'b' (Identificador = Valor ;)
+	 -> Reiniciando analizador sintactico a partir de la linea 42 con la palabra 'break'
+
+Error Lexico 47:
+	El valor = 39494 supera el valor maximo de 32767, en la linea 43
+	-> Manejando el error lexico: Continuara el sintactico como si hubiera leido un entero valido
+
+Error Sintactico 61: Valor inesperado 'print', en la linea 45
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en el print, esperando print [Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 47 con la palabra 'identificador'
+
+Error Sintactico 61: Valor inesperado '+', en la linea 47
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
+Error Lexico 40:
+	Ha llegado el caracter '-' no reconocido por el procesador, en la linea 47
+	-> Manejando el error lexico: Pidiendo otro token al lexico
+
++ Informacion del error sintactico anterior: Error en la asignacion de la variable 'a' (Identificador = Valor ;)
+	 -> Reiniciando analizador sintactico a partir de la linea 48 con la palabra 'break'
+
+Se han detectado errores semanticos en el codigo:
+	+ Error Semantico 96:
+		Con el operando <, se ha tratado de hacer bool < entero, cuando solo se puede entero < entero, antes de la linea 3
+	+ Error Semantico 91:
+		returns inconsistentes en los bloques de la funcion o del switch, devolviendo entero y bool al mismo tiempo, antes de la linea 6
+	+ Error Semantico 96:
+		Con el operando <, se ha tratado de hacer bool < entero, cuando solo se puede entero < entero, antes de la linea 11
+	+ Error Semantico 85:
+		El identificador 'restaNprimeros' no es una funcion y se esta tratando como si lo fuera, antes de la linea 23
+	+ Error Semantico 84:
+		Tratando de asignar un valor de un tipo bool al identificador 'c' de tipo entero, antes de la linea 33
+	+ Error Semantico 84:
+		Tratando de asignar un valor de un tipo bool al identificador 'c' de tipo entero, antes de la linea 50
+	+ Error Semantico 80:
+		Ha tratado de usar un return fuera de una funcion, antes de la linea 56
+	+ Error Semantico 82:
+		Ha tratado de usar un break fuera de un switch, antes de la linea 57

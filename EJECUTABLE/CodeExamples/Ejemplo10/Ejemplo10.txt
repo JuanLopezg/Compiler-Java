@@ -1,0 +1,22 @@
+/*Ejemplo analizador sintactico correcto*/
+function boo int(int n, int m) {
+    if(n < m)
+        return n*m;
+    return n + m;
+}
+function foo string() {
+    input x; input y;
+    if(boo(x, y) < 100)
+        return "Valores validos";
+    return "Error";
+}
+input x;
+switch(x) {
+    case 1:
+        foo();
+        break;
+    case 2:
+        boo(100, x);
+    default:
+        print("No hemos hecho nada");
+}

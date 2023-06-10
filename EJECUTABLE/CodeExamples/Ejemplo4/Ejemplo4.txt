@@ -1,0 +1,35 @@
+/*Ejemplo Mal*/
+function fibo int (int n,int num){
+	if( a < d || a > d)
+		print(str);
+	a /= d;
+	return a;	
+}
+let m boolean = true; 
+function main() {
+	let x int;
+	/*error falta nombre identificador*/
+	let string = "hola";
+	input x;
+	x = foo(x);
+	print x + 232;
+}
+main();
+function dividir int (int n,int num){
+	let res ;/*declaracion de variable*/
+	let b int;
+	res=num;
+	b=1;
+	/*error falta ), da error con el identificador*/
+	if (num < n
+		b = ; /*no ve este error, esta saltando lineas*/
+	switch(b) {
+		case 1:
+			return n;
+		case 2;
+			n /= (n + 1);
+			return n;
+	}
+	return res;
+}
+/*comentario sin fin

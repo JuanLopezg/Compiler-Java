@@ -1,0 +1,44 @@
+/* Programa de ejemplo con errores
+Prueba errores lexicos
+*/
+var = 35;
+function foo int (int n, int m) {
+	 m = m*a_23;
+	 m /= n*5 + 657;
+	 if(n > m & n < m+356) print "n is higher";
+	 return n*m;
+}
+
+let a string = "hola mundo"
+/*valor supera max int*/
+let i = 32768;
+
+function bar string () {
+	 print a;
+	 /* error mas de 64 caracteres*/
+	 let _hola_2 = "0123456789 0123456789 0123456789 0123456789 0123456789 0123456789";
+	 print (_fola_2);
+	 return _hola_2;
+}
+
+function fibo int (int n) {
+	 if(n < 1) return 0;
+	 if(n < 2) return 1;
+	 return fibo(n - 1) + fibo(n - 2);
+}
+/*definicion funcion main
+
+****
+*/
+function main() {
+	 print foo(2 , 3); print "\n"; print fibo(35);
+	 bar();
+	 a / b;
+	 let x;
+	 input x;
+	 if(x > 10 && x < 20) print(fibo(x));
+	 if(x < 5 | x > 24) print fibor(x + 10);
+	 return;
+}
+main();
+/* fin

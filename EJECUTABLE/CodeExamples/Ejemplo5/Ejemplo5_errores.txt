@@ -1,0 +1,40 @@
+Error Lexico 47:
+	El valor = 123123412 supera el valor maximo de 32767, en la linea 3
+	-> Manejando el error lexico: Continuara el sintactico como si hubiera leido un entero valido
+
+Error Lexico 48:
+	En la cadena 'toooooooolooooonnnngggggggggggggggglsfÃ±alkjdfÃ±alskjdflaksjflksdfÃ±alskdjfÃ±laskdjfÃ±alkdj' se excede la cantidad maxima de 64 caracteres, en la linea 5
+	-> Manejando el error lexico: Continuara el sintactico como si hubiera leido una cadena valida
+
+Error Sintactico 61: Valor inesperado '=', en la linea 8
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del let, esperando let Identificador Tipo [= Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 10 con la palabra 'let'
+
+Error Lexico 49:
+	La cadena 'halksef;' termina inesperadamente con un salto de linea, en la linea 11
+	-> Manejando el error lexico: Debido a la cadena faltandole las comillas de cierre, devolvemos solo un ';'
+
+Error Sintactico 61: Valor inesperado ';', en la linea 11
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del let, esperando let Identificador Tipo [= Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 11 con la palabra 'let'
+
+Error Lexico 43:
+	Esperando '|', ha recibido ' ', en la linea 13
+	-> Manejando el error lexico: Continuara como si hubiera leido un '||'
+
+Error Lexico 42:
+	Esperando '&', ha recibido ' ', en la linea 15
+	-> Manejando el error lexico: Continuara como si hubiera leido un '&&'
+
+Error Lexico 44:
+	Esperando '=' o '*', ha recibido ' ', en la linea 27
+	-> Manejando el error lexico: No se puede diferenciar entre un error de inicio de comentario ('/*' o al escribir un '/=', asi que continuara solo el Lexico
+
++ Fin de panic, recuperando el semantico y el sintactico para finalizar analisis
+
+Error Sintactico 61: Valor inesperado 'EOF', en la linea 29
+Se han detectado errores semanticos en el codigo:
+	+ Error Semantico 81:
+		El identificador 'c' usado para el input no es del tipo cadena o entero, antes de la linea 13

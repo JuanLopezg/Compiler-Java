@@ -1,0 +1,56 @@
+/*con errores semanticos*/
+function funcion int (int n) {
+	 if(n+4 < n < 10) return u;
+	 if(n -16 > 1) return a+b+c;
+	return v < 10;
+}
+function divhastaMen int (int n,int num){
+	/*declaracion de variable*/
+	res=num;
+	b=1;
+	if (100 < num < n)
+		b = 2;
+	switch(b) {
+		case 1:
+			return n;
+		case 2;
+			n /= (n + 1);
+			return n;
+	}
+	return res;
+}
+function main() {
+	print restaNprimeros(35 ,4);
+	 let x;
+	 input x;
+	 x= 20;
+	 if(x > 10 && x < 20) print divhastaMen(x , x*20));
+	 if(x < 5 || x > 24) print divhastaMen(x + 10 , x+500);
+	/*switch con 2 case y default*/
+	let a
+	let b
+	let c;
+	c= true;
+	b=4;
+	a=2;
+	switch(a) {
+	    case 2:
+    		print(a);
+		    print funcion(b)
+		    b = n*345;
+		    b+4;
+    		break;
+  	case 39494:
+   		print(b)
+		print funcion(a)
+		a = n*459;
+		a+349-3;
+   		 break;
+ 	 default:
+   		 c = true;
+	}
+	 return;
+}
+main();
+return;
+break;

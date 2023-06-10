@@ -1,0 +1,53 @@
+Error Lexico 42:
+	Esperando '&', ha recibido ' ', en la linea 8
+	-> Manejando el error lexico: Continuara como si hubiera leido un '&&'
+
+Error Sintactico 61: Valor inesperado 'let', en la linea 14
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
+Error Lexico 47:
+	El valor = 32768 supera el valor maximo de 32767, en la linea 14
+	-> Manejando el error lexico: Continuara el sintactico como si hubiera leido un entero valido
+
++ Informacion del error sintactico anterior: Error en la declaracion del let, esperando let Identificador Tipo [= Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 16 con la palabra 'function'
+
+Error Sintactico 61: Valor inesperado '=', en la linea 19
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
+Error Lexico 48:
+	En la cadena '0123456789 0123456789 0123456789 0123456789 0123456789 0123456789' se excede la cantidad maxima de 64 caracteres, en la linea 19
+	-> Manejando el error lexico: Continuara el sintactico como si hubiera leido una cadena valida
+
++ Informacion del error sintactico anterior: Error en la declaracion del let, esperando let Identificador Tipo [= Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 20 con la palabra 'print'
+
+Error Lexico 40:
+	Ha llegado el caracter '-' no reconocido por el procesador, en la linea 27
+	-> Manejando el error lexico: Pidiendo otro token al lexico
+
+Error Sintactico 61: Valor inesperado 'constante entera', en la linea 27
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
+Error Lexico 40:
+	Ha llegado el caracter '-' no reconocido por el procesador, en la linea 27
+	-> Manejando el error lexico: Pidiendo otro token al lexico
+
++ Informacion del error sintactico anterior: Error en el return, esperando return [Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 29 con la palabra '}'
+
+Error Lexico 44:
+	Esperando '=' o '*', ha recibido ' ', en la linea 36
+	-> Manejando el error lexico: No se puede diferenciar entre un error de inicio de comentario ('/*' o al escribir un '/=', asi que continuara solo el Lexico
+
+Error Lexico 43:
+	Esperando '|', ha recibido ' ', en la linea 40
+	-> Manejando el error lexico: Continuara como si hubiera leido un '||'
+
+Error Lexico 46:
+	Finalizacion de fichero inesperada dentro de un comentario, en la linea 44
+	-> Manejando el error lexico: Pidiendo otro token al lexico
+
++ Fin de panic, recuperando el semantico y el sintactico para finalizar analisis
+
+Error Sintactico 61: Valor inesperado 'EOF', en la linea 44
+Se han detectado errores semanticos en el codigo:
+	+ Error Semantico 92:
+		En la funcion 'bar' se espera que se devuelva cadena, pero esta tratando de devolver entero, antes de la linea 24

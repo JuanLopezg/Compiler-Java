@@ -1,0 +1,16 @@
+TABLA foo #2:
+	* LEXEMA : 'n'
+		+ tipo : 'entero'
+		+ despl : 0
+	* LEXEMA : 'm'
+		+ tipo : 'entero'
+		+ despl : 1
+TABLA bar #3:
+	* LEXEMA : '_hola_2'
+		+ tipo : 'entero'
+		+ despl : 0
+TABLA fibo #4:
+	* LEXEMA : 'n'
+		+ tipo : 'entero'
+		+ despl : 0
+TABLA main #5:

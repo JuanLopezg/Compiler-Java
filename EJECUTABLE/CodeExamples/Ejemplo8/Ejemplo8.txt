@@ -1,0 +1,21 @@
+/*Ejemplo Bien*/
+/*funcion aleatoria*/
+function main (int a, int b) {
+    print a + b;
+}
+function aleatoria int (int n,int num){
+	let _a_1 int;
+	input _a_1;
+	switch(_a_1){
+		case 1: 
+			if(_a_1 < 10)
+				print("hola mundo");	
+			break;
+		case 2:
+			_a_1 /= num;
+		default:
+			main(a , a*20);
+	}
+	return a;	
+}
+print aleatoria(10, 50);

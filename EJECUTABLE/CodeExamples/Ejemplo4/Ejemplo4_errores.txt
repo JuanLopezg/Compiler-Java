@@ -1,0 +1,27 @@
+Error Sintactico 60: Error de equiparacion, esperando identificador ha recibido string, en la linea 12
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del let, esperando let Identificador Tipo [= Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 13 con la palabra 'input'
+
+Error Sintactico 61: Valor inesperado ';', en la linea 19
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del let, esperando let Identificador Tipo [= Valor] ;
+	 -> Reiniciando analizador sintactico a partir de la linea 20 con la palabra 'let'
+
+Error Sintactico 61: Valor inesperado 'identificador', en la linea 25
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion del if, esperando if ( ValorBool ) SentenciaSimple
+	 -> Reiniciando analizador sintactico a partir de la linea 26 con la palabra 'switch'
+
+Error Sintactico 60: Error de equiparacion, esperando : ha recibido ;, en la linea 29
+	 -> Pausando el semantico y continuando el lexico hasta encontrar punto de seguro de salto:
++ Informacion del error sintactico anterior: Error en la declaracion de los bloques del switch, esperando case Valor : [SentSwitch]
+	 -> Reiniciando analizador sintactico a partir de la linea 33 con la palabra 'return'
+
+Error Lexico 46:
+	Finalizacion de fichero inesperada dentro de un comentario, en la linea 35
+	-> Manejando el error lexico: Pidiendo otro token al lexico
+
+Se han detectado errores semanticos en el codigo:
+	+ Error Semantico 85:
+		El identificador 'foo' no es una funcion y se esta tratando como si lo fuera, antes de la linea 14

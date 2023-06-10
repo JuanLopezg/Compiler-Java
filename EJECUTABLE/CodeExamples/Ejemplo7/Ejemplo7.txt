@@ -1,0 +1,26 @@
+/*programa de ejemplo sin errores 2*/
+/*esta funcion multiplica los n primeros numeros entre si*/
+function divHastaCero int(int n) {
+	print n;
+	n /= 2;		
+	if(n < 1)
+		return 0;
+	return divHastaCero(n);
+}
+/*comprueba que n es mayor que 0 y menor que m*/
+function mayor boolean (int n, int m){
+	return (n > 0) && m >0 && n < m;
+}
+let x int;
+let y int;
+input x;
+input y;
+switch(x) {
+	case 1:
+		divHastaCero(y);
+	case 2:
+		if(mayor(y, x))
+			y = y*x;
+	default:
+		print "caso no encontrado";
+}
